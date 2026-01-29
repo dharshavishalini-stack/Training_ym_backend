@@ -13,6 +13,9 @@ app.use(express.json())
 app.use(cors())
 connectDB()
 // http://localhost:5000/api/user/signup
+// http://localhost:5000/api/user/getusers
+// http://localhost:5000/api/user/updatepassword/:id
+
 app.use('/api/users',userRoute)
 dotenv.config();
 
